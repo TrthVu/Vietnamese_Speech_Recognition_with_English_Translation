@@ -1,0 +1,116 @@
+{
+ "finetune_total_min": 62.09704586267472,
+ "vietspeech": {
+  "metadata_rows": 100000,
+  "columns": [
+   "id",
+   "source_index",
+   "audio_path",
+   "vi_text",
+   "sampling_rate",
+   "audio_format",
+   "en_text"
+  ],
+  "audio_ext": {
+   "audio": 100000
+  },
+  "sampled": 55000,
+  "dev": 5500,
+  "train": 49500,
+  "zip_total_gb": null,
+  "n_zips": 0,
+  "hours_sampled": 61.19346166666667,
+  "dur_s": {
+   "min": 2.0,
+   "p25": 2.72,
+   "median": 3.616,
+   "p75": 5.024,
+   "p95": 7.188,
+   "max": 8.0,
+   "mean": 4.005390218181819
+  },
+  "dur_gt30": 0,
+  "vi_words": {
+   "min": 3.0,
+   "p25": 10.0,
+   "median": 13.0,
+   "p75": 18.0,
+   "p95": 27.0,
+   "max": 44.0,
+   "mean": 14.289781818181819
+  },
+  "en_words": {
+   "min": 1.0,
+   "p25": 7.0,
+   "median": 10.0,
+   "p75": 14.0,
+   "p95": 21.049999999995634,
+   "max": 211.0,
+   "mean": 11.037581818181819
+  },
+  "asr_empty": 0,
+  "read_errors": 0,
+  "nt_fixed": 7430
+ },
+ "fleurs": {
+  "rows": 4212,
+  "columns": [
+   "split",
+   "fleurs_id",
+   "audio_path",
+   "vi_script",
+   "en_script",
+   "flores_id",
+   "flores_split",
+   "match_status",
+   "sampling_rate",
+   "duration_sec",
+   "cluster",
+   "vi_words",
+   "en_words"
+  ],
+  "sentences": 1978,
+  "hours": 13.2746,
+  "dur_s": {
+   "min": 2.52,
+   "p25": 8.46,
+   "median": 10.74,
+   "p75": 13.32,
+   "p95": 18.686999999999987,
+   "max": 42.18,
+   "mean": 11.345811965811965
+  },
+  "dur_gt30": 13,
+  "match_status": {
+   "matched": 4212
+  },
+  "rec_per_sentence": {
+   "min": 1.0,
+   "p25": 2.0,
+   "median": 2.0,
+   "p75": 3.0,
+   "p95": 3.0,
+   "max": 3.0,
+   "mean": 2.129423660262892
+  },
+  "vi_words": {
+   "min": 7.0,
+   "p25": 22.0,
+   "median": 28.0,
+   "p75": 35.0,
+   "p95": 48.0,
+   "max": 75.0,
+   "mean": 29.121320037986706
+  },
+  "en_words": {
+   "min": 6.0,
+   "p25": 16.0,
+   "median": 20.0,
+   "p75": 25.0,
+   "p95": 33.0,
+   "max": 60.0,
+   "mean": 20.920465337132004
+  },
+  "zip_gb": 2.8491364140063524
+ }
+}

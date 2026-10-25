@@ -1,0 +1,5 @@
+name,src,frac,n_train,n_dev,done,epochs_run,stopped_early,best_dev_loss,train_s,peak_vram_gb,batch,lr,fp16,seed,train_min
+B_100,asr_text,1.0,49500,5500,True,11.0,True,1.4644510746002197,1426.0,7.84,64,2e-05,True,42,23.8
+clean_100,vi_text,1.0,49500,5500,True,9.0,True,1.5998964309692383,1181.1,7.83,64,2e-05,True,42,19.7
+B_50,asr_text,0.5,24750,5500,True,10.0,True,1.5466136932373047,748.7,7.83,64,2e-05,True,42,12.5
+B_25,asr_text,0.25,12375,5500,True,9.0,True,1.6063268184661865,370.0,7.84,64,2e-05,True,42,6.2

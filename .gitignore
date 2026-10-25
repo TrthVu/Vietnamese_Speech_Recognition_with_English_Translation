@@ -1,0 +1,52 @@
+# Audio and archives (too large; see data/README.md)
+*.wav
+*.flac
+*.mp3
+*.zip
+*.tar
+*.tar.gz
+
+# Model weights and checkpoints (GitHub blocks files > 100 MB)
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+best_model/
+checkpoint-*/
+
+# VietSpeech-derived data (model-output terms not verified)
+data/metadata_with_en_vinai.csv
+results/asr_out/asr_hyp.csv
+
+# Per-chunk intermediate outputs (regenerable)
+results/asr_out/chunk_*.csv
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Secrets and local config
+.env
+*token*
+kaggle.json
+
+# LaTeX build files (keep main.tex and figs/)
+report_task2/*.aux
+report_task2/*.log
+report_task2/*.out
+report_task2/*.toc
+report_task2/*.bbl
+report_task2/*.blg
+report_task2/*.synctex.gz
+report_task2/*.pdf
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

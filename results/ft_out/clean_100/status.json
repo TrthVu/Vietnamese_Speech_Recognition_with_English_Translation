@@ -1,0 +1,17 @@
+{
+ "name": "clean_100",
+ "src": "vi_text",
+ "frac": 1.0,
+ "n_train": 49500,
+ "n_dev": 5500,
+ "done": true,
+ "epochs_run": 9.0,
+ "stopped_early": true,
+ "best_dev_loss": 1.5998964309692383,
+ "train_s": 1181.1,
+ "peak_vram_gb": 7.83,
+ "batch": 64,
+ "lr": 2e-05,
+ "fp16": true,
+ "seed": 42
+}

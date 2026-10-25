@@ -1,0 +1,17 @@
+{
+ "name": "B_25",
+ "src": "asr_text",
+ "frac": 0.25,
+ "n_train": 12375,
+ "n_dev": 5500,
+ "done": true,
+ "epochs_run": 9.0,
+ "stopped_early": true,
+ "best_dev_loss": 1.6063268184661865,
+ "train_s": 370.0,
+ "peak_vram_gb": 7.84,
+ "batch": 64,
+ "lr": 2e-05,
+ "fp16": true,
+ "seed": 42
+}

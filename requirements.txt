@@ -1,0 +1,20 @@
+# Core machine-learning stack
+torch
+transformers<5
+accelerate
+sentencepiece
+sacremoses
+huggingface-hub
+
+# Data processing and audio
+numpy
+pandas
+datasets<4
+soundfile
+librosa
+psutil
+
+# Evaluation and reporting
+sacrebleu
+rapidfuzz
+matplotlib
