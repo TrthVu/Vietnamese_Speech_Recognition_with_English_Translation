@@ -33,8 +33,13 @@ Notes: no published baseline number was measured on this exact FLEURS setup, so 
 ├── notebooks/   Colab notebooks, numbered in run order
 ├── results/     Outputs (CSV, JSON, tables, figures); no models or audio
 ├── data/        Dataset notes and FLEURS metadata
-└── report_task2/ LaTeX report (main.tex) and figures
+├── report_task2/ LaTeX report (main.tex) and figures
+└── ext_demo/     Chrome extension demo for live Vietnamese → English captions
 ```
+
+## Live captions demo
+
+The `ext_demo/` folder contains a Chrome extension and a Colab server for live captions from the current browser tab. Choose system B (PhoWhisper ASR + OPUS-MT) or system C (SeamlessM4T direct translation) in the popup; the server unloads the previous path before loading the selected one. Start the Colab GPU server, load `ext_demo/extension` as an unpacked Chrome extension, then paste the server's HTTPS tunnel URL into its popup. See [`ext_demo/demo_README.md`](ext_demo/demo_README.md) for setup, usage, troubleshooting and privacy details. This is a demo; end-to-end latency and reliability have not been measured.
 
 ## Reproducing
 

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phụ đề Việt – Anh</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    body { width: 340px; margin: 0; padding: 20px; color: #172033; background: #f5f7fb; }
+    header { display: flex; gap: 12px; align-items: center; margin-bottom: 18px; }
+    .mark { display: grid; width: 42px; height: 42px; place-items: center; border-radius: 13px; color: white; background: #4f46e5; font-size: 20px; }
+    h1 { margin: 0; font-size: 16px; } .subtitle { margin: 4px 0 0; color: #68738a; font-size: 12px; }
+    label { display: block; margin-bottom: 7px; font-size: 12px; font-weight: 650; }
+    input, select { width: 100%; padding: 11px 12px; border: 1px solid #d7dce7; border-radius: 9px; outline: none; background: white; color: #172033; font: inherit; font-size: 12px; }
+    input:focus, select:focus { border-color: #6366f1; box-shadow: 0 0 0 3px #6366f122; }
+    select:disabled { opacity: .65; }
+    .hint { margin: 7px 0 16px; color: #778197; font-size: 11px; line-height: 1.45; }
+    .actions { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
+    button { min-height: 39px; border: 0; border-radius: 9px; cursor: pointer; font: inherit; font-size: 13px; font-weight: 650; }
+    button:disabled { cursor: default; opacity: .5; }
+    #start { color: white; background: #4f46e5; } #start:hover:not(:disabled) { background: #4338ca; }
+    #stop { color: #344054; background: #e6e9f0; } #stop:hover:not(:disabled) { background: #d9deea; }
+    .status { display: flex; gap: 8px; align-items: flex-start; min-height: 38px; margin: 14px 0 0; color: #667085; font-size: 12px; line-height: 1.45; }
+    .dot { flex: 0 0 auto; width: 8px; height: 8px; margin-top: 4px; border-radius: 50%; background: #98a2b3; }
+    .status[data-kind="running"] { color: #067647; } .status[data-kind="running"] .dot { background: #12b76a; }
+    .status[data-kind="warning"] { color: #b54708; } .status[data-kind="warning"] .dot { background: #f79009; }
+    .status[data-kind="error"] { color: #b42318; } .status[data-kind="error"] .dot { background: #f04438; }
+    footer { margin-top: 5px; padding-top: 12px; border-top: 1px solid #e3e7ef; color: #8791a4; font-size: 10px; }
+  </style>
+</head>
+<body>
+  <header><div class="mark" aria-hidden="true">文</div><div><h1>Phụ đề Việt – Anh</h1><p class="subtitle">Dịch âm thanh đang phát trên tab</p></div></header>
+  <label for="url">Địa chỉ máy chủ Colab</label>
+  <input id="url" type="url" inputmode="url" placeholder="https://....trycloudflare.com" autocomplete="url">
+  <p class="hint">Dán URL do ô Colab cung cấp. URL thường thay đổi sau mỗi lần khởi động lại.</p>
+  <label for="system">Model dịch</label>
+  <select id="system">
+    <option value="b">B · PhoWhisper + OPUS-MT</option>
+    <option value="c">C · SeamlessM4T trực tiếp</option>
+  </select>
+  <p class="hint">Chỉ nạp một nhánh tại một thời điểm. B dùng 2 model; C dùng 1 model.</p>
+  <div class="actions"><button id="start" type="button">Bắt đầu</button><button id="stop" type="button">Dừng</button></div>
+  <div id="msg" class="status" role="status" aria-live="polite"><span class="dot"></span><span id="msgText">Sẵn sàng. Mở tab có âm thanh để bắt đầu.</span></div>
+  <footer>Âm thanh tab được gửi tới máy chủ để xử lý.</footer>
+  <script src="popup.js"></script>
+</body>
+</html>
