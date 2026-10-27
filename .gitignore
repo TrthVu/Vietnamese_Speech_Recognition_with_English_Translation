@@ -43,7 +43,6 @@ report_task2/*.toc
 report_task2/*.bbl
 report_task2/*.blg
 report_task2/*.synctex.gz
-report_task2/*.pdf
 
 # OS / editor
 .DS_Store
