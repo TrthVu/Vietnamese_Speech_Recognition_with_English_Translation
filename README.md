@@ -2,6 +2,12 @@
 
 Course **DPL302m** – **Group 5**
 
+| Member | Student ID |
+|---|---|
+| Phạm Nguyễn Khánh Nguyên | SE200641 |
+| Trần Thanh Vũ | SE200433 |
+| Hà Lê Thành Nhân | SE201028 |
+
 This repository contains the code, results and report for a project that converts spoken Vietnamese into English text. Three systems are compared on the full Vietnamese portion of FLEURS.
 
 ## Systems
